@@ -25,7 +25,7 @@ const SecondEpisode = () => {
 
     return(
         <div className="episode">
-            <h4>Ep.2</h4>
+            <h4>Ep.2 Curved Line Chart</h4>
             <svg ref={svgRef}>
                 <path d="M0,150, 100,100 150,120" stroke="blue" fill="none"></path>
             </svg>

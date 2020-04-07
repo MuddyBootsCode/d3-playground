@@ -21,7 +21,7 @@ const FirstEpisode = () => {
 
     return (
         <div className="episode">
-            <h4>Ep.1</h4>
+            <h4>Ep.1 Circles</h4>
             <svg
                 ref={svgRef}
             >

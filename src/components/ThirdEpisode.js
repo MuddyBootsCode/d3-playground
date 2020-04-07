@@ -46,7 +46,7 @@ const ThirdEpisode = () => {
 
     return(
         <div className="episode">
-            <h4>Ep.3</h4>
+            <h4>Ep.3 Chart with X & Y Axis</h4>
             <svg ref={svgRef} style={{ overflow: "visible"}}>
                 <g className="x-axis" />
                 <g className="y-axis" />

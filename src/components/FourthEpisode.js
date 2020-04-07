@@ -52,7 +52,7 @@ const FourthEpisode = () => {
 
     return(
         <div className="episode">
-            <h4>Ep.4 </h4>
+            <h4>Ep.4 Bar Chart With Transitions</h4>
             <svg ref={svgRef}>
                 <g className="x-axis" />
                 <g className="y-axis" />
