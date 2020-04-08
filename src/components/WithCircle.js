@@ -22,7 +22,7 @@ const WithCircle = () => {
     useEffect(() => {
         const svg = select(ref.current);
         svg
-            .selectAll("circle")
+            .selectAll(".circle")
             .data(data)
             .join("circle")
             .attr("class", "new")
@@ -30,7 +30,7 @@ const WithCircle = () => {
 
     return(
         <div className="episode">
-            <h4>With Component Circle</h4>
+            <h4>With Circle Component</h4>
             <svg>
                 {
                     data.map((c) => {
