@@ -1,33 +1,18 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect, } from "react";
 import { select, axisBottom, axisRight, scaleLinear, scaleBand } from "d3";
-import ResizeObserver from "resize-observer-polyfill";
+import useResizeObserver from "./useResizeObserver";
 
-const useResizeObserver = ref => {
-    const [dimensions, setDimensions] = useState(null);
-    useEffect(() => {
-        const observeTarget = ref.current;
-        const resizeObserver = new ResizeObserver(entries => {
-            entries.forEach(entry => {
-                setDimensions(entry.contentRect);
-            });
-        });
-        resizeObserver.observe(observeTarget);
-        return () => {
-            resizeObserver.unobserve(observeTarget);
-        };
-    }, [ref]);
-    return dimensions;
-};
+
 
 function BarChart({ data }) {
     const svgRef = useRef();
     const wrapperRef = useRef();
     const dimensions = useResizeObserver(wrapperRef);
+    console.log(svgRef, wrapperRef)
 
     // will be called initially and on every data change
     useEffect(() => {
         const svg = select(svgRef.current);
-        console.log(dimensions);
 
         if (!dimensions) return;
 

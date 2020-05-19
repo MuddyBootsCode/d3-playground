@@ -1,5 +1,5 @@
 import React, {useState, useEffect, useRef } from 'react';
-import {select, line, curveCardinal, axisBottom, axisRight, scaleLinear} from 'd3';
+import { select, line, curveCardinal, axisBottom, axisRight, scaleLinear } from 'd3';
 
 const ThirdEpisode = () => {
     const initialData = [25, 30, 45, 60 , 20, 65, 75, 100];
@@ -69,12 +69,8 @@ const ThirdEpisode = () => {
                     Reset Data
                 </button>
             </div>
-
         </div>
-
     )
-
-
 };
 
 

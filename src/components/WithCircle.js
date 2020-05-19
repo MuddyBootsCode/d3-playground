@@ -1,12 +1,11 @@
-import React, {useEffect, useState, useRef} from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import Circle from "./Circle";
-import {select} from "d3";
+import { select } from "d3";
 
 
 const circleFilter = (circle) => {
     return circle.cord < 35
 };
-
 
 const WithCircle = () => {
     const initialData = [

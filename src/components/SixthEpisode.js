@@ -8,7 +8,7 @@ const SixthEpisode = () => {
     return(
         <div className="episode">
             <h4>
-                Ep.6 Bar Chart As a Responsive Component
+                Ep.6 Media Responsive Chart
             </h4>
             <BarChart data={data} />
             <div className="buttonRow">

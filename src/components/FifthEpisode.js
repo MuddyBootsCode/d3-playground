@@ -71,7 +71,7 @@ const FifthEpisode = () => {
 
     return(
         <div className="episode">
-            <h4>Ep.5 Bar Chart with tooltips and Data Add</h4>
+            <h4>Ep.5 Bar Chart w/ tooltips </h4>
             <svg ref={svgRef}>
                 <g className="x-axis" />
                 <g className="y-axis" />
